@@ -7,9 +7,14 @@ export  function getHomeSwiftImg() {
   })
 
 }
-export  function getHeat() {
+export  function getHomeGoods(type,page) {
 
   return request({
-    url:'/pandora/heat/getAllHeats'
+    url:'/home/data',
+    params:{
+
+      type,
+      page
+    }
   })
 }
